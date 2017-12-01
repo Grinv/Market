@@ -1,0 +1,231 @@
+@import 'fonts.scss';
+
+$default-font: Gilroy, sans-serif;
+$bold-font: GilroyBold, sans-serif;
+$max-width: 1080px;
+
+body {
+  font-family: $default-font;
+  line-height: 140%;
+}
+
+.boldFont {
+  font-family: $bold-font;
+  font-weight: bold;
+}
+
+.upperCase {
+  text-transform: uppercase;
+}
+
+.contacts {
+  .phone, .email {
+    display: block;
+    color: white;
+  }
+}
+
+#mainSection {
+  background-color: gray;
+  color: white;
+  position: relative;
+  overflow: hidden;
+
+  #mainSectionMovie {
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    background: black;
+    background-size: cover;
+    transition: 1s opacity;
+    object-fit: contain;
+  }
+
+  #mainStationDarkBg {
+    position: absolute;
+    background-color: #453693;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+  }
+
+  #mainSectionContainer {
+    margin: 0 auto;
+    max-width: $max-width;
+    position: relative;
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    #mainSectionContent {
+      padding: 30px 20px;
+      display: flex;
+
+      #mainSectionText {
+        h1 {
+          font-size: 56px;
+          line-height: 120%;
+        }
+
+        h2 {
+          font-size: 24px;
+          line-height: 140%;
+          margin: 30px 0;
+        }
+
+        .formProfitList {
+          display: flex;
+          padding-bottom: 30px;
+
+        &:first-child {
+          padding-bottom: 20px;
+        }
+
+          .formProfitListItem {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            padding-right: 30px;
+
+            .formProfitListItemIcon {
+              img {
+                width: 60px;
+              }
+            }
+
+            .formProfitListItemText {
+              padding-left: 30px;
+              width: 100%;
+              font-size: 15px;
+            }
+          }
+        }
+
+        h3 {
+          margin-top: 30px;
+          font-size: 24px;
+          line-height: 140%;
+        }
+      }
+      #mainSectionForm {
+        width: 40%;
+      }
+    }
+  }
+}
+
+#whatIsItSection {
+  background-image: url(../img/bg/whatIsIt.jpg);
+  background-position: top center;
+  background-size: cover;
+  color: white;
+
+  #whatIsItSectionContainer {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 70px 20px;
+    h2 {
+      font-size: 50px;
+      line-height: 120%;
+      margin-bottom: 30px;
+    }
+
+    #whatIsItSectionDescription {
+      font-size: 30px;
+      line-height: 140%;
+    }
+
+    h2, #whatIsItSectionDescription {
+      text-align: center;
+    }
+  }
+}
+
+#profitSection {
+  #profitSectionContainer {
+    max-width: $max-width;
+    margin: 0 auto;
+    
+    #profitList {
+
+      .propfitListItem {
+        display: flex;
+
+        .propfitListItemIcon {
+          margin-right: 50px;
+        }
+
+        .propfitListItemText {
+          h2 {
+            margin-top: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#connectionSection {
+  #connectionSectionContainer {
+    max-width: 980px;
+    margin: 0 auto;
+
+    h2 {
+      text-align: center;
+    }
+
+    #connectionProfitList {
+
+      .connectionProfitListItem {
+      }
+    }
+  }
+}
+
+#partOfClubSection {
+  background-image: url(../img/bg/partOfClub.jpg);
+  color: white;
+
+  #partOfClubSectionContainer {
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+}
+
+#investSection {
+  background-image: url(../img/bg/Invest.jpg);
+  color: white;
+
+  #investSectionContainer {
+    max-width: 980px;
+    margin: 0 auto;
+
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+footer {
+  background-color: #261e52;
+  padding: 20px;
+
+  #footerContainer {
+    max-width: $max-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+}
