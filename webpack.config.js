@@ -1,5 +1,7 @@
 const path = require('path');
+const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = {
     entry: './src/entry.js',
@@ -15,7 +17,13 @@ module.exports = {
                 from: '**/*',
                 to: './res/svg'
             }
-        ])
+        ]),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            "window.jQuery": 'jquery'
+        }),
+        new UglifyJsPlugin()
     ],
     module: {
         rules: [

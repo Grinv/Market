@@ -12,6 +12,7 @@
 
     <title>Market</title>
     <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src='./build/bundle.js'></script>
 </head>
 <body>
@@ -27,27 +28,24 @@
                     <img src='./build/res/svg/logo.svg' alt='Logo'>
                 </div>
                 <div class='contacts'>
-                    <a class='phone' href='tel:+7(495)2948090'></a>+7 (495) 294 80 90</a>
+                    <a class='phone' href="tel:+7(495)294 80 90">+7 (495) 294 80 90</a>
                     <a class='email' href='mailto:support@ibc.broker'>support@ibc.broker</a>
                 </div>
             </header>
             <div id='mainSectionContent'>
                 <div id='mainSectionText'>
-                    <h1 class='boldFont'>Покупай криптовалюту с нами <span class='upperCase'>легально, удобно, безопасно</span></h1>
-                    <h2>Заполни форму и ты получишь счёт с возможностью покупать и продавать Bitcoin и Ethereum</h2>
+                    <h1 class='boldFont'>Покупай криптовалюту с&nbsp;нами <span class='upperCase'>легально, удобно, безопасно</span></h1>
+                    <h2>Заполни форму и ты получишь счёт с возможностью покупать и&nbsp;продавать Bitcoin и Ethereum</h2>
+                    <button id='openFormMobile'>Зарегистрироваться →</button>
                     <ul class='formProfitList'>
                         <li class='formProfitListItem'>
-                            <div class='formProfitListItemIcon'>
-                                <img src='./build/res/svg/icon1.svg' alt='Logo'>
-                            </div>
+                            <img class='formProfitListItemIcon' src='./build/res/svg/icon1.svg' alt='lifebuoy'>
                             <div class='formProfitListItemText'>
                                 Бесплатная поддержка в открытии счёта
                             </div>
                         </li>
                         <li class='formProfitListItem'>
-                            <div class='formProfitListItemIcon'>
-                                <img src='./build/res/svg/icon2.svg' alt='0%'>
-                            </div>
+                            <img class='formProfitListItemIcon' src='./build/res/svg/icon2.svg' alt='0%'>
                             <div class='formProfitListItemText'>
                                 Отсуствие дополнительных тарифов на брокерское обслуживание
                             </div>
@@ -55,29 +53,96 @@
                     </ul>
                     <ul class='formProfitList'>
                         <li class='formProfitListItem'>
-                            <div class='formProfitListItemIcon'>
-                                <img src='./build/res/svg/icon3.svg' alt='0%'>
-                            </div>
+                            <img class='formProfitListItemIcon' src='./build/res/svg/icon3.svg' alt='handshake'>
                             <div class='formProfitListItemText'>
                                 Торговля через крупную инвестиционную компанию    
                             </div>
                         </li>
                         <li class='formProfitListItem'>
-                            <div class='formProfitListItemIcon'>
-                                <img src='./build/res/svg/icon4.svg' alt='0%'>
-                            </div>
+                            <img class='formProfitListItemIcon' src='./build/res/svg/icon4.svg' alt='shield'>
                             <div class='formProfitListItemText'>
                                 Доступ к регулируемому рынку со страховкой счёта и защитой прав клиентов
                             </div>
                         </li>
                     </ul>
                     <h3 class='boldFont upperCase'>
-                        Торгуй и зарабатывай с нами.<br>
+                        Торгуй и зарабатывай с&nbsp;нами.<br>
                         Вступай в наш клуб Investors Buying Club
                     </h3>
                 </div>
-                <div id='mainSectionForm'></div>
+                <div id='mainSectionForm'>
+                    <div class='form'>
+                        <div class='formSwitch'>
+                            <div class='formSwitchItem selected' data-key='urid'>Юридическим лицам</div>
+                            <div class='formSwitchItem' data-key='fiz'>Физическим лицам</div>
+                        </div>
+                        <div class='formContainer'>
+                            <div class='inputContainer withBottomMargin'>
+                                <span class='inputPlaceholder'>Фамилия, имя, отчество</span>
+                                <input type='text'>
+                            </div>
+                            <div class='inputContainer withBottomMargin'>
+                                <span class='inputPlaceholder'>Название компании</span>
+                                <input type='text'>
+                            </div>
+                            <div class='inputContainer withBottomMargin'>
+                                <span class='inputPlaceholder'>Телефон</span>
+                                <input type='tel'>
+                            </div>
+                            <div class='inputContainer'>
+                                <span class='inputPlaceholder'>Email</span>
+                                <input type='email'>
+                            </div>
+                            <div class='emailDescription'>
+                                На этот адрес придёт анкета для заполнения и список необходимых документов для завершения регистрации
+                            </div>
+                            <div class='agree'>
+                                Я согласен на передачу и обработку своих <span class='agreeTerms'>персональных&nbsp;данных</span>
+                            </div>
+                            <button class='sendForm'>Зарегистрироваться →</button>
+                        </div>
+                        <div class='registerLink'>
+                            <a target='_blank' href='https://just2trade.online/openaccount/real/mct?platform=transaq&mmaTariffHash=CA3AFEC0BC53&foriframe=true'>
+                                Перейти к регистрации →
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+    <section id='mainMobileSection'>
+        <div id='mainMobileSectionContainer'>
+            <ul class='formProfitList'>
+                <li class='formProfitListItem'>
+                    <img class='formProfitListItemIcon' src='./build/res/svg/icon1-black.svg' alt='lifebuoy'>
+                    <div class='formProfitListItemText'>
+                        Бесплатная поддержка в открытии счёта
+                    </div>
+                </li>
+                <li class='formProfitListItem'>
+                    <img class='formProfitListItemIcon' src='./build/res/svg/icon2-black.svg' alt='0%'>
+                    <div class='formProfitListItemText'>
+                        Отсуствие дополнительных тарифов на брокерское обслуживание
+                    </div>
+                </li>
+                <li class='formProfitListItem'>
+                    <img class='formProfitListItemIcon' src='./build/res/svg/icon3-black.svg' alt='handshake'>
+                    <div class='formProfitListItemText'>
+                        Торговля через крупную инвестиционную компанию
+                    </div>
+                </li>
+                <li class='formProfitListItem'>
+                    <img class='formProfitListItemIcon' src='./build/res/svg/icon4-black.svg' alt='shield'>
+                    <div class='formProfitListItemText'>
+                        Доступ к регулируемому рынку со страховкой счёта и защитой прав клиентов
+                    </div>
+                </li>
+            </ul>
+            <h3 class='boldFont upperCase'>
+                Торгуй и зарабатывай с&nbsp;нами.<br>
+                Вступай в наш клуб Investors Buying Club
+            </h3>
         </div>
     </section>
     <section id='whatIsItSection'>
@@ -94,7 +159,9 @@
         <div id='profitSectionContainer'>
             <ul id='profitList'>
                 <li class='propfitListItem'>
-                    <div class='propfitListItemIcon'>Icon</div>
+                    <div class='propfitListItemIcon'>
+                        <img src='./build/res/svg/icon21.svg' alt='scales'>
+                    </div>
                     <div class='propfitListItemText'>
                         <h2 class='boldFont upperCase'>Легально</h2>
                         <div>
@@ -103,7 +170,9 @@
                     </div>
                 </li>
                 <li class='propfitListItem'>
-                    <div class='propfitListItemIcon'>Icon</div>
+                    <div class='propfitListItemIcon'>
+                        <img src='./build/res/svg/icon22.svg' alt='like'>
+                    </div>
                     <div class='propfitListItemText'>
                         <h2 class='boldFont upperCase'>Удобно</h2>
                         <div>
@@ -120,7 +189,9 @@
                     </div>
                 </li>
                 <li class='propfitListItem'>
-                    <div class='propfitListItemIcon'>Icon</div>
+                    <div class='propfitListItemIcon'>
+                        <img src='./build/res/svg/icon23.svg' alt='security'>
+                    </div>
                     <div class='propfitListItemText'>
                         <h2 class='boldFont upperCase'>Безопасно</h2>
                         <div>
@@ -136,47 +207,211 @@
     <section id='connectionSection'>
         <div id='connectionSectionContainer'>
             <h2 class='boldFont upperCase'>Подключение к инвестиционной стратегии Investors Buying Club</h2>
-            <div>Подключается по желанию и позволяет поручить управление сделками нашим опытным трейдерам</div>
-            <ul id='connectionProfitList'>
-                <li class='connectionProfitListItem'>Экономит время на анализе рынка</li>
-                <li class='connectionProfitListItem'>Существенно снижает риск входа в рынок</li>
-                <li class='connectionProfitListItem'>Зафиксированной прибыли в 2017</li>
-                <li class='connectionProfitListItem'>Доступ к вводу и выводу средств только у себя</li>
-                <li class='connectionProfitListItem'>Реализуется через технологию следования в терминале Metatrader 5</li>
-            </ul>
+            <div id='connectionSectionDescription'>Подключается по желанию и позволяет поручить управление сделками нашим опытным трейдерам</div>
+            <div id='connectionSectionDescriptionLarge'>
+                <ul class='connectionProfitList marginBottom'>
+                    <li class='connectionProfitListItem'>
+                        <img src='./build/res/svg/icon31.svg' alt='watch'>
+                        <div>Экономит время на анализе рынка</div>
+                    </li>
+                    <li class='connectionProfitListItem'>
+                        <img src='./build/res/svg/icon32.svg' alt='umbrella'>
+                        <div>Существенно снижает риск входа в рынок</div>
+                    </li>
+                    <li class='connectionProfitListItem'>
+                        <img class='img100' src='./build/res/svg/icon33.svg' alt='100%'>
+                        <div>Зафиксированной прибыли в&nbsp;2017</div>
+                    </li>
+                </ul>
+                <ul class='connectionProfitList'>
+                    <li class='connectionProfitListItem'>
+                        <img src='./build/res/svg/icon34.svg' alt='safe'>
+                        <div>Доступ к вводу и выводу средств только у себя</div>
+                    </li>
+                    <li class='connectionProfitListItem'>
+                        <img class='imgMetatrader5' src='./build/res/svg/icon35.svg' alt='metatrader5'>
+                        <div>Реализуется через технологию следования в терминале Metatrader 5</div>
+                    </li>
+                </ul>
+            </div>
+            <div id='connectionSectionDescriptionMiddle'>
+                <ul class='connectionProfitList marginBottom'>
+                    <li class='connectionProfitListItem'>
+                        <img src='./build/res/svg/icon31.svg' alt='watch'>
+                        <div>Экономит время на анализе рынка</div>
+                    </li>
+                    <li class='connectionProfitListItem'>
+                        <img src='./build/res/svg/icon32.svg' alt='umbrella'>
+                        <div>Существенно снижает риск входа в рынок</div>
+                    </li>
+                </ul>
+                <ul class='connectionProfitList marginBottom'>
+                    <li class='connectionProfitListItem'>
+                        <img class='img100' src='./build/res/svg/icon33.svg' alt='100%'>
+                        <div>Зафиксированной прибыли в&nbsp;2017</div>
+                    </li>
+                    <li class='connectionProfitListItem'>
+                        <img src='./build/res/svg/icon34.svg' alt='safe'>
+                        <div>Доступ к вводу и выводу средств только у себя</div>
+                    </li>
+                </ul>
+                <ul class='connectionProfitList'>
+                    <li class='connectionProfitListItem'>
+                        <img class='imgMetatrader5' src='./build/res/svg/icon35.svg' alt='metatrader5'>
+                        <div>Реализуется через технологию следования в терминале Metatrader 5</div>
+                    </li>
+                </ul>
+            </div>
+            <div id='connectionSectionDescriptionSmall'>
+                <ul class='connectionProfitList'>
+                    <li class='connectionProfitListItem'>
+                        <img src='./build/res/svg/icon31.svg' alt='watch'>
+                        <div>Экономит время на анализе рынка</div>
+                    </li>
+                    <li class='connectionProfitListItem'>
+                        <img src='./build/res/svg/icon32.svg' alt='umbrella'>
+                        <div>Существенно снижает риск входа в рынок</div>
+                    </li>
+                    <li class='connectionProfitListItem'>
+                        <img class='img100' src='./build/res/svg/icon33.svg' alt='100%'>
+                        <div>Зафиксированной прибыли в&nbsp;2017</div>
+                    </li>
+                    <li class='connectionProfitListItem'>
+                        <img src='./build/res/svg/icon34.svg' alt='safe'>
+                        <div>Доступ к вводу и выводу средств только у себя</div>
+                    </li>
+                    <li class='connectionProfitListItem'>
+                        <img class='imgMetatrader5' src='./build/res/svg/icon35.svg' alt='metatrader5'>
+                        <div>Реализуется через технологию следования в терминале Metatrader 5</div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
     <section id='partOfClubSection'>
         <div id='partOfClubSectionContainer'>
             <h2 class='boldFont upperCase'>Стань частью закрытого клуба Investors Buying Club</h2>
-            <ul>
-                <li>Регулярные встречи, обсуждение всех новостей мира криптовалют на закрытых митапах с экспертами</li>
-                <li>Телеграм-канал с торговыми рекомендациями</li>
-                <li>Еженедельная рассылка дайджеста с актуальными новостями, предложениями и календарём событий на предстоящую неделю</li>
+            <ul id='partOfClubSectionList'>
+                <li class='partOfClubSectionListItem'>Регулярные встречи, обсуждение всех новостей мира криптовалют на закрытых митапах с экспертами</li>
+                <li class='partOfClubSectionListItem'>Телеграм-канал с торговыми рекомендациями</li>
+                <li class='partOfClubSectionListItem'>Еженедельная рассылка дайджеста с актуальными новостями, предложениями и календарём событий на предстоящую неделю</li>
             </ul>
         </div>
     </section>
     <section id='investSection'>
         <div id='investSectionContainer'>
             <h2 class='boldFont upperCase'>Инвестирую в криптовалюту легально, удобно и безопасно</h2>
+            <button class='sendForm'>Зарегистрироваться →</button>
         </div>
     </section>
     <footer>
-        <div id='footerContainer'>
-            <div id='copyright'>
+        <div class='footerContainer large'>
+            <div class='copyright'>
                 <div class='logo'>
-                    logo
+                    <img src='./build/res/svg/logo.svg' alt='Logo'>
                 </div>
-                &copy; 2017 Investor Buying Club. All rights reserved.
+                <div class='copyrightText'>&copy; 2017 Investor Buying Club. All rights reserved.</div>
             </div>
-            <div>
-                telegram
-            </div>
+            <ul class='footerLinkList'>
+                <li class='footerLinkListItem'>
+                    <a href=''><img src='./build/res/svg/footer-telegram.svg' alt='telegram'></a>
+                </li>
+                </li>
+                <li class='footerLinkListItem'>
+                    <a href=''><img src='./build/res/svg/footer-fb.svg' alt='facebook'></a>
+                </li>
+            </ul>
             <div class='contacts'>
-                <a class='phone' href='tel:+7(495)2948090'></a>+7 (495) 294 80 90</a>
+                <a class='phone' href="tel:+7(495)294 80 90">+7 (495) 294 80 90</a>
                 <a class='email' href='mailto:support@ibc.broker'>support@ibc.broker</a>
             </div>
         </div>
+        <div class='footerContainer small'>
+            <div class='contacts'>
+                <a class='phone' href="tel:+7(495)294 80 90">+7 (495) 294 80 90</a>
+                <a class='email' href='mailto:support@ibc.broker'>support@ibc.broker</a>
+            </div>
+            <ul class='footerLinkList'>
+                <li class='footerLinkListItem'>
+                    <a href=''><img src='./build/res/svg/footer-telegram.svg' alt='telegram'></a>
+                </li>
+                </li>
+                <li class='footerLinkListItem'>
+                    <a href=''><img src='./build/res/svg/footer-fb.svg' alt='facebook'></a>
+                </li>
+            </ul>
+            <div class='copyright'>
+                <div class='logo'>
+                    <img src='./build/res/svg/logo-mobile.svg' alt='Logo'>
+                </div>
+                <div class='copyrightText'>&copy; 2017 Investor Buying Club.<br>All rights reserved.</div>
+            </div>
+        </div>
     </footer>
+    <div id='agreeTermsText' class='mfp-hide'>
+        <div id='agreeTermsTextInnerContainer'>
+            <h2 class='boldFont'>Политика конфиденциальности</h2>
+            <p>
+                Администрация данной посадочной страницы (Лэндинг) не может передать или раскрыть информацию предоставленную
+                пользователем (далее Пользователь) при регистрации и использовании функций сайта третьим лицам, кроме
+                случаев, описанных законодательством страны, на территории которой пользователь ведет свою деятельность.
+            </p>
+            <p>
+                Для регистрации на посадочной странице, пользователь обязан внести некоторую персональную информацию. Для
+                проверки предоставленных данных, посадочная страница оставляет за собой право потребовать доказательства
+                идентичности в онлайн или офлайн режимах.
+            </p>
+            <p>
+                Лэндинг использует личную информацию Пользователя для обслуживания и для улучшения качества предоставляемых
+                услуг. Часть персональной информации может быть предоставлена банку или платежной системе, в случае, если
+                предоставление этой информации обусловлено процедурой перевода средств платежной системе, услугами которой
+                Пользователь желает воспользоваться. Лэндинг прилагает все усилия для сбережения в сохранности личных данных
+                Пользователя. Личная информация может быть раскрыта в случаях, описанных законодательством, либо когда
+                администрация сочтет подобные действия необходимыми для соблюдения юридической процедуры, судебного
+                распоряжения или легального процесса необходимого для работы Пользователя с Лэндингом. В других случаях,
+                ни при каких условиях, информация, которую Пользователь передает Лэндингу, не будет раскрыта третьим лицам.
+            </p>
+        </div>
+    </div>
+    <div id='formBox' class='mfp-hide'>
+        <div id='formBoxInnerContainer'>
+            <div class='form'>
+                <div class='formSwitch'>
+                    <div class='formSwitchItem selected' data-key='urid'>Юридическим лицам</div>
+                    <div class='formSwitchItem' data-key='fiz'>Физическим лицам</div>
+                </div>
+                <div class='formContainer'>
+                    <div class='inputContainer withBottomMargin'>
+                        <span class='inputPlaceholder'>Фамилия, имя, отчество</span>
+                        <input type='text'>
+                    </div>
+                    <div class='inputContainer withBottomMargin'>
+                        <span class='inputPlaceholder'>Название компании</span>
+                        <input type='text'>
+                    </div>
+                    <div class='inputContainer withBottomMargin'>
+                        <span class='inputPlaceholder'>Телефон</span>
+                        <input type='tel'>
+                    </div>
+                    <div class='inputContainer'>
+                        <span class='inputPlaceholder'>Email</span>
+                        <input type='email'>
+                    </div>
+                    <div class='emailDescription'>
+                        На этот адрес придёт анкета для заполнения и список необходимых документов для завершения регистрации
+                    </div>
+                    <div class='agree'>
+                        Я согласен на передачу и обработку своих <span class='agreeTerms'>персональных&nbsp;данных</span>
+                    </div>
+                    <button class='sendForm'>Зарегистрироваться →</button>
+                </div>
+                <div class='registerLink'>
+                    <a target='_blank' href='https://just2trade.online/openaccount/real/mct?platform=transaq&mmaTariffHash=CA3AFEC0BC53&foriframe=true'>
+                        Перейти к регистрации →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
