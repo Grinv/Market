@@ -34,9 +34,9 @@ body {
 
   .phone {
     display: block;
-    font-size: 24px;
+    font-size: 25px;
     text-decoration: none;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 
     @media (max-width: $mobile-width) {
       font-size: 20px;
@@ -60,12 +60,17 @@ body {
   .formSwitch {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
+    max-width: 400px;
+    font-size: 18px;
+    line-height: 120%;
+
+    @media (max-width: 450px) {
+      font-size: 14px;
+    }
 
     .formSwitchItem {
       cursor: pointer;
-      font-size: 17px;
-      line-height: 120%;
       padding-top: 10px;
       padding-bottom: 7px;
       border-bottom: 3px solid white;
@@ -107,31 +112,51 @@ body {
   }
 
   .emailDescription {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 120%;
   }
 
   .agree {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 140%;
-    margin: 20px 0;
+    margin:14px 0 20px 0;
+    display: flex;
+    align-items: flex-start;
 
-    .agreeTerms {
-      color: #453693;
+    .checkOn, .checkOff {
+      margin-top: 4px;
+      margin-right: 10px;
       cursor: pointer;
-      border-bottom: 1px dashed #453693;
+    }
+
+    .checkOn {
+      display: none;
+    }
+
+    .agreeCheck {
+      display: none;
+    }
+    .agreeText {
+      line-height: 120%;
+
+      .agreeTerms {
+        color: #453693;
+        cursor: pointer;
+        border-bottom: 1px dashed #453693;
+      }
     }
   }
 
   .sendForm {
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     color: white;
     font-family: $default-font;
     border: none;
-    width: 233px;
-    height: 52px;
+    width: 270px;
+    height: 60px;
     background: url(../img/svg/btn1.svg);
+    background-size: 100%;
 
     &:hover {
       background: url(../img/svg/btn1-hover.svg);
@@ -147,9 +172,11 @@ body {
     display: none;
 
     a {
-      width: 233px;
-      height: 52px;
+      font-size: 18px;
+      width: 270px;
+      height: 60px;
       background: url(../img/svg/btn1.svg);
+      background-size: 100%;
       color: white;
       display: flex;
       justify-content: center;
@@ -224,7 +251,7 @@ body {
     }
 
     #mainSectionContent {
-      padding: 30px 20px;
+      padding: 17px 20px 43px 20px;
       display: flex;
       align-items: flex-start;
 
@@ -244,21 +271,22 @@ body {
             font-size: 50px;
           }
           @media (max-width: $mobile-width) {
-            font-size: 42px;
+            font-size: 31px;
           }
         }
 
         h2 {
-          font-size: 24px;
+          font-size: 25px;
           line-height: 140%;
           margin: 30px 0;
+          margin-top: 27px;
 
           @media (max-width: 1120px) {
             font-size: 20px;
           }
           @media (max-width: $mobile-width) {
             font-size: 18px;
-            margin: 15px 0;
+            margin: 10px 0 19px 0;
           }
         }
 
@@ -289,12 +317,12 @@ body {
             .formProfitListItemText {
               padding-left: 30px;
               width: 100%;
-              font-size: 15px;
+              font-size: 18px;
             }
           }
         }
 
-        #openFormMobile {
+        .openForm {
           cursor: pointer;
           font-size: 18px;
           color: white;
@@ -314,7 +342,7 @@ body {
         }
 
         h3 {
-          margin-top: 30px;
+          margin-top: 9px;
           font-size: 24px;
           line-height: 140%;
 
@@ -380,7 +408,7 @@ body {
       line-height: 140%;
 
       @media (max-width: $mobile-width) {
-        font-size: 18px;
+        font-size: 17px;
         text-align: center;
       }
     }
@@ -737,7 +765,7 @@ body {
       }
     }
 
-    .sendForm {
+    .openForm {
       margin-top: 30px;
       cursor: pointer;
       font-size: 23px;
@@ -804,6 +832,10 @@ footer {
             height: 40px;
             width: 40px;
           }
+
+          &:hover {
+          opacity: .8;
+        }
         }
       }
 
@@ -827,6 +859,7 @@ footer {
         .phone {
           font-size: 32px;
           line-height: 100%;
+          margin-bottom: 13px;
         }
 
         .email {
@@ -835,7 +868,7 @@ footer {
       }
 
       .footerLinkList {
-        padding: 30px 0;
+        padding: 21px 0 12px 0;
 
         .footerLinkListItem {
           display: inline-block;
@@ -851,8 +884,8 @@ footer {
       .copyright {
         .logo {
           img {
-            width: 95px;
-            height: 28px;
+            width: 111px;
+            height: 43px;
           }
         }
 
@@ -909,6 +942,38 @@ footer {
         font-size: 15px;
         margin-bottom: 10px;
       }
+    }
+  }
+
+  .mfp-close {
+    background: white;
+    opacity: 1;
+    font-size: 36px;
+
+    @media (max-width: $mobile-width) {
+      color: #453693;
+      font-size: 30px;
+    }
+  }
+}
+
+#formBox {
+  background-color: white;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  box-sizing: border-box;
+
+  .mfp-close {
+    background: white;
+    opacity: 1;
+    font-size: 36px;
+
+    @media (max-width: $mobile-width) {
+      color: #453693;
+      font-size: 30px;
     }
   }
 }

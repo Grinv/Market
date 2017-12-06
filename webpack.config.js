@@ -15,7 +15,10 @@ module.exports = {
             {
                 context: './src/img/svg',
                 from: '**/*',
-                to: './res/svg'
+                to: './res/svg',
+                transform: function(fileContent) {
+                    return fileContent;
+                },
             }
         ]),
         new webpack.ProvidePlugin({
